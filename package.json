@@ -1,0 +1,27 @@
+{
+  "name": "repo-share",
+  "version": "0.0.1",
+  "description": "Source files of a NodeJS app generating an iframe based on your repository, so you can show off your portfolio in an elegant way",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cimlah/Repo-Share.git"
+  },
+  "keywords": [
+    "repository",
+    "github",
+    "share",
+    "iframe",
+    "elegant",
+    "portfolio"
+  ],
+  "author": "Michał Stolarczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cimlah/Repo-Share/issues"
+  },
+  "homepage": "https://github.com/Cimlah/Repo-Share#readme"
+}
