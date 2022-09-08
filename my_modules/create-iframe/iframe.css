@@ -1,9 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --colour-background: linear-gradient(107.56deg, #020409 0%, #0E1116 50%);
+    --colour-text: #FFFFFF;
+    --size-font: 3rem;
+    --size-avatar: 8rem;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: black;
-    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--colour-background);
+    color: var(--colour-text);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: var(--size-font);
+}
+
+main {
+    /* background-color: aqua; */
+    width: 90%;
+    height: 90%;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5%;
+}
+
+.title {
+    align-self: end;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.description {
+    align-self: start;
+
+    text-align: center;
+}
+
+.avatar {
+    width: var(--size-avatar);
+    height: auto;
+    border-radius: 50%;
+}
+
+.user {
+    font-weight: 600;
+    background: linear-gradient(89.12deg, #F25BFF 9.5%, #FFAA5B 32.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.repo-name {
+    font-weight: 600;
+    background: linear-gradient(90.58deg, #FFAA5B 39.64%, #F25BFF 91.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.infos {
+    align-self: end;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.info-img {
+    width: calc(var(--size-avatar)/2);
+    height: calc(var(--size-avatar)/2);
+}
+
+.info-stars {
+    justify-self: start;
+}
+
+.info-forks {
+    justify-self: center;
+}
+
+.info-language {
+    justify-self: end;
 }

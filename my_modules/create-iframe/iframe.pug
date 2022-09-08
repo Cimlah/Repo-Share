@@ -8,11 +8,29 @@ html(lang="en")
 
         link(rel="stylesheet", href="/iframe-css")
     body
-        p #{userPug}
-        p #{repoPug}
-        p #{repoUrlPug}
-        p #{descriptionPug}
-        p #{avatarPug}
-        p #{starsCounterPug}
-        p #{forksCounterPug}
-        p #{languagePug}
+        //- p #{userPug}
+        //- p #{repoPug}
+        //- p #{repoUrlPug}
+        //- p #{descriptionPug}
+        //- p #{avatarPug}
+        //- p #{starsCounterPug}
+        //- p #{forksCounterPug}
+        //- p #{languagePug}
+        main
+            .title
+                img.avatar(src= avatarPug, alt="Owners's profile picture")
+                p.repo-full-name
+                    span.user #{userPug}
+                    | /
+                    span.repo-name #{repoPug}
+            p.description #{descriptionPug}
+            .infos
+                .info.info-stars
+                    img.info-img(src="/icon/star", alt="")
+                    p.counter #{starsCounterPug}
+                .info.info-forks
+                    img.info-img(src="/icon/gitfork", alt="")
+                    p.counter #{forksCounterPug}
+                .info.info-language
+                    img.info-img(src="/icon/script", alt="")
+                    p.counter #{languagePug}

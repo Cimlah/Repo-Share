@@ -31,6 +31,12 @@ app.get('/iframe-css', function(req, res) {
     res.sendFile(path.join(__dirname, 'my_modules/create-iframe/iframe.css'))
 })
 
+app.get('/icon/:icon', function(req, res) {
+    if(req.params.icon == 'star') {res.sendFile(path.join(__dirname, 'my_modules/create-iframe/icons/star.svg'))}
+        else if(req.params.icon == 'gitfork') {res.sendFile(path.join(__dirname, 'my_modules/create-iframe/icons/gitfork.svg'))}
+    else {res.sendFile(path.join(__dirname, 'my_modules/create-iframe/icons/script.svg'))}
+})
+
 app.listen(port, (err) => {
     if(err) {
         console.log(err)
