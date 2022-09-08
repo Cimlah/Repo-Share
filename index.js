@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const octokit = require('./my_modules/octokit')
+const createIframe = require('./my_modules/create-iframe/create-iframe')
 
 const port = 3000
 const publicRoot = path.join(__dirname, 'public')
@@ -20,8 +21,9 @@ app.get('/gh/:user/:repo', function (req, res) {
     const repoParam = req.params.repo;
 
     (async () => {
-        res.set("Content-Type", "application/JSON")
-        res.send(JSON.stringify(await octokit(userParam, repoParam), null, 3))
+        const data = await octokit(userParam, repoParam)
+
+        res.send(createIframe(data.user, data.repo, data.description, data.avatar, data.starsCounter, data.forksCounter, data.language))
     }) ();
 })
 
