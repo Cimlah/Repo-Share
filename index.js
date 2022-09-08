@@ -27,6 +27,10 @@ app.get('/gh/:user/:repo', function (req, res) {
     }) ();
 })
 
+app.get('/iframe-css', function(req, res) {
+    res.sendFile(path.join(__dirname, 'my_modules/create-iframe/iframe.css'))
+})
+
 app.listen(port, (err) => {
     if(err) {
         console.log(err)
