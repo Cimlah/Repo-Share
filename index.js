@@ -23,7 +23,7 @@ app.get('/gh/:user/:repo', function (req, res) {
     (async () => {
         const data = await octokit(userParam, repoParam)
 
-        res.send(createIframe(data.user, data.repo, data.description, data.avatar, data.starsCounter, data.forksCounter, data.language))
+        res.send(createIframe(data.user, data.repo, data.repoUrl, data.description, data.avatar, data.starsCounter, data.forksCounter, data.language))
     }) ();
 })
 

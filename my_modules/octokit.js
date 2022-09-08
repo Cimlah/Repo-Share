@@ -12,6 +12,7 @@ module.exports = async function (userParam, repositoryParam) {
         return({
             user: response.data.owner.login,
             repo: response.data.name,
+            repoUrl: response.data.html_url,
             description: response.data.description,
             avatar: response.data.owner.avatar_url,
             starsCounter: response.data.stargazers_count,
