@@ -15,6 +15,8 @@
     --color-hr2: #142F0E;
     --color-even-row1: #35394071;
     --color-even-row2: #1a847971;
+    --color-iframes-box-shadow1: 0px 0px 8px 1px #393939;
+    --color-iframes-box-shadow2: 0px 0px 10px 2px #1e983c;
     --width-content: 60%;
     --size-heading: 4rem;
     --size-nav-img: 3rem;
@@ -28,6 +30,7 @@
     --color-nav: var(--color-nav1);
     --color-hr: var(--color-hr1);
     --color-even-row: var(--color-even-row1);
+    --color-iframes-box-shadow: var(--color-iframes-box-shadow1);
 }
 
 .light {
@@ -38,6 +41,7 @@
     --color-nav: var(--color-nav2);
     --color-hr: var(--color-hr2);
     --color-even-row: var(--color-even-row2);
+    --color-iframes-box-shadow: var(--color-iframes-box-shadow2);
 }
 
 * {
@@ -273,7 +277,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 1rem 1rem;
+    gap: 1.2rem 1.2rem;
 }
 
 .example-iframe {
@@ -281,7 +285,7 @@ img {
     height: 100%;
 
     border-radius: 15px;
-    box-shadow: 0px 0px 8px 1px rgba(77, 147, 245, 0.8);
+    box-shadow: var(--color-iframes-box-shadow);
 }
 
 .iframe1 {
