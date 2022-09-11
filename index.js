@@ -40,7 +40,7 @@ app.get('/icon/:icon', function(req, res) {
     else {res.sendFile(path.join(__dirname, 'my_modules/create-iframe/icons/script.svg'))}
 })
 
-app.listen(port, (err) => {
+app.listen(process.env.PORT || port, (err) => {
     if(err) {
         console.log(err)
     }
