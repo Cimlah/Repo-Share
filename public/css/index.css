@@ -293,7 +293,6 @@ img {
 }
 
 .iframe3 {
-    height: 100%;
     grid-column: 4 / 5;
     grid-row: 1 / 3;
 }
