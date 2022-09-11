@@ -77,10 +77,11 @@ main {
 }
 
 .infos {
-    width: 85%;
+    width: fit-content;
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
     font-weight: 500;
     font-style: normal;
 }
@@ -97,7 +98,7 @@ main {
 }
 
 .info-stars {
-    justify-self: start;
+    justify-self: end;
 }
 
 .info-forks {
@@ -105,5 +106,5 @@ main {
 }
 
 .info-language {
-    justify-self: end;
+    justify-self: start;
 }
