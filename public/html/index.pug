@@ -1,0 +1,53 @@
+doctype doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Repo Share
+
+        link(rel="stylesheet", href="../css/index.css")
+        link(rel="stylesheet", href="../css/responsive.css")
+        link(rel="stylesheet", href="../css/animations.css")
+
+        script(defer src="../js/client-index.js") 
+    body.dark
+        nav.nav-pc.nav-animation
+            div
+            .nav-content
+                .menu-box
+                    img(src="../images/menu-icon.png").menu-icon
+                    p MENU
+                .links
+                    .nav-element.hover-animation
+                        a(href="") HOME
+                    .nav-element.hover-animation
+                        a(href="") ABOUT
+                    .nav-element.hover-animation
+                        a(href="") API
+                    .nav-element.hover-animation
+                        a(href="") GITHUB
+                img(src="../images/moon.png").theme-switcher
+            div
+        
+        nav.nav-mobile.nav-animation
+            img(src="../images/menu-icon.png").menu-icon.menu-icon-mobile
+        
+
+        main.content-animation
+            h1 Repo Share
+            h2
+                | A NodeJS app generating an iframe based on information about your repository, 
+                span.description-gradient so you can show off your portfolio in an elegant way
+        
+        section.nav-mobile-menu.content-animation(style="display: none;")
+            .links
+                .nav-element.hover-animation
+                    a(href="") HOME
+                .nav-element.hover-animation
+                    a(href="") ABOUT
+                .nav-element.hover-animation
+                    a(href="") API
+                .nav-element.hover-animation
+                    a(href="") GITHUB
+            img(src="../images/moon.png").theme-switcher

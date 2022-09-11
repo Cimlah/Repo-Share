@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const pug = require('pug')
 const octokit = require('./my_modules/octokit')
 const createIframe = require('./my_modules/create-iframe/create-iframe')
 
@@ -11,8 +12,10 @@ app.use(express.static(publicRoot))
 app.use(express.json())
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(publicRoot, 'html/index.html'))
-    res.send('Conntected to ` / ` route')
+    pug.renderFile(path.join(publicRoot, 'html/index.pug'), (err, html) => {
+        if(err) {console.log(err)}
+        res.send(html)
+    })
 })
 
 app.get('/gh/:user/:repo', function (req, res) {
