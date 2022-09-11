@@ -16,6 +16,11 @@
 }
 
 @media (orientation: portrait) {
+    :root {
+        font-size: 12px;
+        --width-content: 95%
+    }
+
     .nav-pc {
         display: none;
     }
