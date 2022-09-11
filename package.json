@@ -4,7 +4,8 @@
   "description": "Source files of a NodeJS app generating an iframe based on your repository, so you can show off your portfolio in an elegant way",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,8 @@
     "express": "^4.18.1",
     "octokit": "^2.0.7",
     "pug": "^3.0.2"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
