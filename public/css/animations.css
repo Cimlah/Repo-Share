@@ -10,6 +10,10 @@
 	animation: navAnim 3s ease-out 4.5s 1 normal forwards;
 }
 
+.mobile-menu-anim {
+	animation: slide-in1 1.5s ease 0s 1 normal forwards;
+}
+
 .hover-animation:hover {
 	animation: hoverAnimation 2s ease 0s 1 normal forwards;
 }
