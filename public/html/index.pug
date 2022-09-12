@@ -34,12 +34,16 @@ html(lang="en")
             img(src="../images/menu-icon.png").menu-icon.menu-icon-mobile
         
 
-        main.content-animation
-            h1 Repo Share
+        main
+            h1.title Repo Share
             h2
-                | A NodeJS app generating an iframe based on information about your repository, 
-                span.description-gradient so you can show off your portfolio in an elegant way
-            .examples
+                .main-description
+                    | A NodeJS app generating an iframe based on information about your repository, 
+                    span.description-gradient so you can show off your portfolio in an elegant way
+                .secondary-description
+                    p.secondary-description-line1 You want to share your GitHub portfolio
+                    p.secondary-description-line2 But don't know how to do it the right way?
+            .examples.content-animation
                 iframe.example-iframe.iframe1(src="gh/flackr/scroll-timeline", frameborder="0") 
                 iframe.example-iframe.iframe2(src="gh/tumic0/GPXSee", frameborder="0") 
                 iframe.example-iframe.iframe3(src="/gh/Phyremaster/papermc-docker", frameborder="0") 

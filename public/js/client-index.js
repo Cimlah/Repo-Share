@@ -40,3 +40,21 @@ function showHideMenu() {
 
 themeSwitcher.forEach(index => {index.addEventListener("click", switchTheme)});
 menuIconMobile.addEventListener("click", showHideMenu);
+
+
+
+const title = document.querySelector(".title")
+const mainDescription = document.querySelector(".main-description")
+const secondaryDescription = document.querySelector(".secondary-description")
+const secondaryDescriptionLine1 = document.querySelector(".secondary-description-line1")
+const secondaryDescriptionLine2 = document.querySelector(".secondary-description-line2")
+
+setTimeout(() => {
+    secondaryDescriptionLine1.style.display = 'none';
+    secondaryDescriptionLine2.style.display = 'none';
+}, 4500)
+
+setTimeout(() => {
+    secondaryDescription.style.display = 'none';
+    mainDescription.style.display = 'block'
+}, 4500)

@@ -75,6 +75,16 @@
         width: 3rem;
         height: 3rem;
     }
+    
+    
+    
+    .secondary-description-line1 {
+        text-align: left;
+    }
+    
+    .secondary-description-line2 {
+        text-align: right;
+    }
 
     .examples {
         grid-template-columns: repeat(3, 1fr);

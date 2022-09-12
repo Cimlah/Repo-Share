@@ -264,12 +264,41 @@ img {
     text-decoration: line-through;
 }
 
-
-
 .nav-mobile-menu {
     display: none;
 }
 
+
+.content-animation {
+    opacity: 0;
+}
+
+.title {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.main-description {
+    display: none;
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.secondary-description-line1 {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.secondary-description-line2 {
+    color: var(--color-nav);
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.secondary-description-line3 {
+    scale: 0;
+    opacity: 0;
+}
 
 .examples {
     height: 25rem;

@@ -1,5 +1,5 @@
 .content-animation {
-    animation: slide-in1 1.5s ease 0.2s 1 normal forwards;
+    animation: slide-in1 1.5s ease 5s 1 normal forwards;
 }
 
 .switcher-animation {
@@ -7,7 +7,7 @@
 }
 
 .nav-animation {
-	animation: navAnim 3s ease-out 0.6s 1 normal forwards;
+	animation: navAnim 3s ease-out 4.5s 1 normal forwards;
 }
 
 .hover-animation:hover {
@@ -17,7 +17,7 @@
 @keyframes slide-in1 {
 	0% {
 		opacity: 0;
-		transform: translateY(-250px);
+		transform: translateY(250px);
 	}
 
 	100% {
@@ -55,5 +55,51 @@
 
 	100% {
 		transform: translateY(5px);
+	}
+}
+
+
+
+.secondary-description-line1 {
+	animation: line1 1s ease-out 1s 1 forwards;
+}
+
+.secondary-description-line2 {
+	animation: line2 1s ease-out 2s 1 forwards;
+}
+
+.title {
+	animation: title 1s ease-out 4.5s 1 forwards;
+}
+
+.main-description {
+	animation: mainDescription 1s ease-out 0s 1 forwards;
+}
+
+@keyframes line1 {
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes line2 {
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes title {
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes mainDescription {
+	100% {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
