@@ -29,6 +29,7 @@ This repository is licensed under MIT License
   <iframe src="https://repo-share.herokuapp.com/gh/Cimlah/Repo-Share", frameborder="0", width="100%"></iframe>
 
   but not in a form of an *iframe*. The goal here is to only generate an HTML. Iframe customisation is up to end-user.
+  * `/raw/:user/:repo` - Get source code of iframe's HTML. For example, if you used `/gh/Cimlah/Repo-Share`, it is the same, but gives you an unrendered HTML.
   * `/iframe-css` - Get source code of the *iframe* CSS
   * `/icon/:icon` - Get icon files used in the *iframe*. Possible values:
     * `star`
