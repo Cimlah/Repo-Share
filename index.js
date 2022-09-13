@@ -29,6 +29,18 @@ app.get('/gh/:user/:repo', function (req, res) {
     }) ();
 })
 
+app.get('/raw/:user/:repo', function (req, res) {
+    const userParam = req.params.user
+    const repoParam = req.params.repo;
+
+    (async () => {
+        const data = await octokit(userParam, repoParam)
+
+        res.set('Content-Type', 'text/plain')
+        res.send(createIframe(data.user, data.repo, data.repoUrl, data.description, data.avatar, data.starsCounter, data.forksCounter, data.language))
+    }) ();
+})
+
 app.get('/iframe-css', function(req, res) {
     res.sendFile(path.join(__dirname, 'my_modules/create-iframe/iframe.css'))
 })
