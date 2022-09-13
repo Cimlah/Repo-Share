@@ -19,7 +19,6 @@ app.get('/', function(req, res) {
 })
 
 app.get('/gh/:user/:repo', function (req, res) {
-    const url = 'https://github.com/' + req.params.user + '/' + req.params.repo
     const userParam = req.params.user
     const repoParam = req.params.repo;
 
