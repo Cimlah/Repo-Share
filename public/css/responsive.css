@@ -1,7 +1,7 @@
 @media (max-width: 1201px) {
     :root {
         --width-content: 80%;
-        --size-heading: 2.6rem;
+        --size-heading: 2rem;
         --size-nav-img: 2rem;
     }
 
@@ -15,10 +15,20 @@
     }
 }
 
+@media (max-height: 930px) {
+    :root {
+        --height-examples: 20rem;
+    }
+}
+
 @media (orientation: portrait) {
     :root {
         font-size: 12px;
-        --width-content: 95%
+        --width-content: 95%;
+    }
+
+    .examples {
+        height: 20rem;
     }
 
     .nav-pc {

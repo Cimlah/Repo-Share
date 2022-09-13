@@ -20,6 +20,7 @@
     --width-content: 60%;
     --size-heading: 4rem;
     --size-nav-img: 3rem;
+    --height-examples: 25rem;
 }
 
 .dark {
@@ -301,7 +302,7 @@ img {
 }
 
 .examples {
-    height: 25rem;
+    height: var(--height-examples);
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
