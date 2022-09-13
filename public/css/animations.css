@@ -15,7 +15,8 @@
 }
 
 .hover-animation:hover {
-	animation: hoverAnimation 2s ease 0s 1 normal forwards;
+	animation: hoverAnimation 0.2s ease 0s 1 normal forwards;
+	cursor: pointer;
 }
 
 @keyframes slide-in1 {
@@ -58,7 +59,7 @@
 	}
 
 	100% {
-		transform: translateY(5px);
+		transform: translateY(-3px);
 	}
 }
 

@@ -149,7 +149,7 @@ main {
     margin-top: 2rem;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, button, .examples.content-animation {
     margin: 1rem;
 }
 
@@ -299,6 +299,14 @@ img {
 .secondary-description-line3 {
     scale: 0;
     opacity: 0;
+}
+
+.share-your-repo {
+    background-color: var(--color-nav);
+    font-size: calc(var(--size-heading) - (var(--size-heading) / 6 * 3));
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
 }
 
 .examples {
