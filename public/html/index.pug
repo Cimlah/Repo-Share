@@ -11,6 +11,7 @@ html(lang="en")
         link(rel="stylesheet", href="../css/animations.css")
 
         script(defer src="../js/client-index.js") 
+        script(defer src="../js/cookies.js") 
     body.dark
         nav.nav-pc.nav-animation
             div
@@ -35,14 +36,14 @@ html(lang="en")
         
 
         main
-            h1.title Repo Share
+            h1.title.title-anim Repo Share
             h2
-                .main-description
+                .main-description.main-description-anim
                     | A NodeJS app generating an iframe based on information about your repository, 
                     span.description-gradient so you can show off your portfolio in an elegant way
                 .secondary-description
-                    p.secondary-description-line1 You want to share your GitHub portfolio
-                    p.secondary-description-line2 But don't know how to do it the right way?
+                    p.secondary-description-line1.secondary-description-line1-anim You want to share your GitHub portfolio
+                    p.secondary-description-line2.secondary-description-line2-anim But don't know how to do it the right way?
             .content-animation
                 button.share-your-repo.hover-animation Share Your Repo Now
             .examples.content-animation
@@ -63,3 +64,9 @@ html(lang="en")
                 .nav-element.hover-animation
                     a(href="") GITHUB
             img(src="../images/moon.png").theme-switcher
+        
+        section.cookie-display.cookie-animation
+            p Cookies are used to prevent intro animation<br/>each time the website loads
+            .cookie-buttons
+                button.accept.hover-animation ACCEPT COOKIES &#127850;
+                button.decline.hover-animation I WANT THESE AWESOME ANIMATIONS &#129321;

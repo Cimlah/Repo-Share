@@ -118,4 +118,10 @@
         grid-column: unset;
         grid-column: 1 / 4;
     }
+
+    .cookie-display {
+        width: var(--width-content);
+        right: 50%;
+        transform: translateX(50%);
+    }
 }

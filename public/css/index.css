@@ -338,3 +338,32 @@ img {
 .iframe5 {
     grid-column: 2 / 4;
 }
+
+.cookie-display {
+    background-color: var(--color-nav);
+    position: fixed;
+    width: fit-content;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 10px;
+}
+
+.cookie-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cookie-display button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.cookie-animation {
+    opacity: 0;
+}

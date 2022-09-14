@@ -65,20 +65,24 @@
 
 
 
-.secondary-description-line1 {
+.secondary-description-line1-anim {
 	animation: line1 1s ease-out 1s 1 forwards;
 }
 
-.secondary-description-line2 {
+.secondary-description-line2-anim {
 	animation: line2 1s ease-out 2s 1 forwards;
 }
 
-.title {
+.title-anim {
 	animation: title 1s ease-out 4.5s 1 forwards;
 }
 
-.main-description {
+.main-description-anim {
 	animation: mainDescription 1s ease-out 0s 1 forwards;
+}
+
+.cookie-animation {
+	animation: cookieAnimation 1.5s ease 5s 1 normal forwards;
 }
 
 @keyframes line1 {
@@ -106,5 +110,29 @@
 	100% {
 		opacity: 1;
 		transform: translateX(0);
+	}
+}
+
+@keyframes cookieAnimation {
+	100% {
+		opacity: 0.9;
+	}
+}
+
+
+
+.normal-animation {
+	animation: normalAnimation 1.5s ease 0.2s 1 normal forwards;
+}
+
+@keyframes normalAnimation{
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
