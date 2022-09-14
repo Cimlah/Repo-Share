@@ -18,6 +18,13 @@ app.get('/', function(req, res) {
     })
 })
 
+app.get('/share-repo', function(req, res) {
+    pug.renderFile(path.join(publicRoot, 'html/share-repo.pug'), (err, html) => {
+        if(err) {console.log(err)}
+        res.send(html)
+    })
+})
+
 app.get('/gh/:user/:repo', function (req, res) {
     const userParam = req.params.user
     const repoParam = req.params.repo;
