@@ -2,6 +2,12 @@ nav {
     opacity: 1 !important;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .gradient {
     background: linear-gradient(91.39deg, #4D94F5 0%, #45DF6B 80%);
     -webkit-background-clip: text;
@@ -35,4 +41,20 @@ nav {
     padding: 0.5rem;
     margin: 0;
     box-shadow: var(--color-iframes-box-shadow);
+}
+
+.generated-iframe {
+    opacity: 0;
+    width: 90%;
+    height: 15rem;
+    border-radius: 15px;
+    box-shadow: var(--color-iframes-box-shadow);
+}
+
+.generated-pre {
+    opacity: 0;
+    width: 90%;
+    padding: 0;
+    box-shadow: var(--color-iframes-box-shadow);
+    padding: 0.5rem 0 0.5rem 0;
 }

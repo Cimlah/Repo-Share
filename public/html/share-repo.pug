@@ -12,6 +12,7 @@ html(lang="en")
         link(rel="stylesheet", href="../css/share-repo.css")
 
         script(defer src="../js/client-index.js") 
+        script(defer src="../js/generate-iframe.js") 
     body.dark
         nav.nav-pc
             div
@@ -41,6 +42,10 @@ html(lang="en")
             .url-input-and-button
                 input.input-url(type="url", name="GitHub Repo URL", placeholder="https://github.com/your/repo")
                 button.button-generate.hover-animation Generate
+            <br/>
+            
+            iframe.generated-iframe(src="", frameborder="0")
+            pre.generated-pre
         
         section.nav-mobile-menu.mobile-menu-anim(style="display: none;")
             .links

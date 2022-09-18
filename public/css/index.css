@@ -149,7 +149,7 @@ main {
     margin-top: 2rem;
 }
 
-h1, h2, h3, h4, h5, h6, p, button, .examples.content-animation {
+h1, h2, h3, h4, h5, h6, p, button, pre, .examples.content-animation {
     margin: 1rem;
 }
 
