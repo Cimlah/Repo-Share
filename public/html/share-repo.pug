@@ -10,6 +10,8 @@ html(lang="en")
         link(rel="stylesheet", href="../css/responsive.css")
         link(rel="stylesheet", href="../css/animations.css")
         link(rel="stylesheet", href="../css/share-repo.css")
+
+        script(defer src="../js/client-index.js") 
     body.dark
         nav.nav-pc
             div
@@ -33,7 +35,12 @@ html(lang="en")
             img(src="../images/menu-icon.png").menu-icon.menu-icon-mobile
 
         main.normal-animation
-            p Share Repo
+            h2
+                | Generate an elegant iframe for 
+                span.bold.italic.gradient Your repository
+            .url-input-and-button
+                input.input-url(type="url", name="GitHub Repo URL", placeholder="https://github.com/your/repo")
+                button.button-generate.hover-animation Generate
         
         section.nav-mobile-menu.mobile-menu-anim(style="display: none;")
             .links
