@@ -124,4 +124,8 @@
         right: 50%;
         transform: translateX(50%);
     }
+
+    .generated-pre {
+        width: calc(90% - 1rem);
+    }
 }

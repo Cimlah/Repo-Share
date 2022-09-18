@@ -53,8 +53,9 @@ main {
 
 .generated-pre {
     opacity: 0;
-    width: 90%;
-    padding: 0;
+    background-color: #0E1116;
+    width: fit-content;
     box-shadow: var(--color-iframes-box-shadow);
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem;
+    text-align: left;
 }

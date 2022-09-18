@@ -19,6 +19,6 @@ generateButton.addEventListener('click', () => {
             pre.classList.remove('normal-animation')
         }, 1600)
 
-        pre.innerHTML = '&#60;iframe src="https://repo-share.herokuapp.com/gh/' + ownerAndRepo + '"' + 'frameborder="0", style="border-radius: 15px; box-shadow: 0px 0px 8px 1px #393939;"&#62;&#60;/iframe&#62;'
+        pre.innerHTML = '&#160;&#60;iframe\n&#160;&#160;src="https://repo-share.herokuapp.com/gh/' + ownerAndRepo + '"' + '\n&#160;&#160;frameborder="0",\n&#160;&#160;style="border-radius: 15px;\n&#160;&#160;box-shadow: 0px 0px 8px 1px #393939;"&#62;\n&#160;&#60;/iframe&#62;'
     }
 })
