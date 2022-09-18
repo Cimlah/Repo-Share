@@ -307,6 +307,7 @@ img {
     border: none;
     border-radius: 15px;
     padding: 1rem;
+    box-shadow: var(--color-iframes-box-shadow);
 }
 
 .examples {
