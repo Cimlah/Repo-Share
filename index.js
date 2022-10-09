@@ -5,7 +5,7 @@ const pug = require('pug')
 const octokit = require('./my_modules/octokit')
 const createIframe = require('./my_modules/create-iframe/create-iframe')
 
-const port = 3000
+const port = process.env.PORT || 3000
 const publicRoot = path.join(__dirname, 'public')
 
 app.use(express.static(publicRoot))
@@ -65,7 +65,7 @@ app.get('/icon/:icon', function(req, res) {
     else {res.sendFile(path.join(__dirname, 'my_modules/create-iframe/icons/script.svg'))}
 })
 
-app.listen(process.env.PORT || port, (err) => {
+app.listen(port, (err) => {
     if(err) {
         console.log(err)
     }
