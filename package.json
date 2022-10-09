@@ -1,6 +1,6 @@
 {
   "name": "repo-share",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Source files of a NodeJS app generating an iframe based on your repository, so you can show off your portfolio in an elegant way",
   "main": "index.js",
   "scripts": {

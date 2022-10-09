@@ -1,5 +1,3 @@
-**Project still in development**
-
 # Repo Share
 
 A NodeJS app generating an iframe based on information about your repository, so you can show off your portfolio in an elegant way.
@@ -35,7 +33,8 @@ This repository is licensed under MIT License
     * `star`
     * `gitfork`
     * `script`
-  * `/` - Display HTML of the main page
+  * `/` - Display the main page
+  * `/about` - Display the *ABOUT* subpage
 
 ## Directory structure
 
