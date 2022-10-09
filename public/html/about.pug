@@ -4,17 +4,16 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Share Your Repo
+        title Repo Share
 
         link(rel="stylesheet", href="../css/index.css")
-        link(rel="stylesheet", href="../css/animations.css")
-        link(rel="stylesheet", href="../css/share-repo.css")
         link(rel="stylesheet", href="../css/responsive.css")
+        link(rel="stylesheet", href="../css/animations.css")
 
         script(defer src="../js/client-index.js") 
-        script(defer src="../js/generate-iframe.js") 
+        script(defer src="../js/cookies.js") 
     body.dark
-        nav.nav-pc
+        nav.nav-pc.nav-animation
             div
             .nav-content
                 .menu-box
@@ -32,20 +31,18 @@ html(lang="en")
                 img(src="../images/moon.png").theme-switcher
             div
         
-        nav.nav-mobile
+        nav.nav-mobile.nav-animation
             img(src="../images/menu-icon.png").menu-icon.menu-icon-mobile
+        
 
-        main.normal-animation
-            h2
-                | Generate an elegant iframe for 
-                span.bold.italic.gradient Your repository
-            .url-input-and-button
-                input.input-url(type="url", name="GitHub Repo URL", placeholder="https://github.com/your/repo")
-                button.button-generate.hover-animation Generate
-            <br/>
-            
-            iframe.generated-iframe(src="", frameborder="0")
-            pre.generated-pre
+        main
+            h2 This project has been being created during my apprenticeship.
+            h3
+                | There were many times when I wanted to share my programming portfolio, but just throwing links was not a good solution for me. I wanted to show my portfolio in a neat way. That's when idea for the 
+                span.italic.bold.description-gradient Repo Share
+                |  was born.
+                br
+                | I figured, that a lot of developers may be struggling with the same problem. So why not make their lives easier and create a repo with solution to this problem?
         
         section.nav-mobile-menu.mobile-menu-anim(style="display: none;")
             .links
@@ -58,3 +55,9 @@ html(lang="en")
                 .nav-element.hover-animation
                     a(href="https://github.com/Cimlah/Repo-Share" target="_blank") GITHUB
             img(src="../images/moon.png").theme-switcher
+        
+        section.cookie-display.cookie-animation
+            p Cookies are used to prevent intro animation<br/>each time the website loads
+            .cookie-buttons
+                button.accept.hover-animation ACCEPT COOKIES &#127850;
+                button.decline.hover-animation I WANT THESE AWESOME ANIMATIONS &#129321;

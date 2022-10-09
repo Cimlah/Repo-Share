@@ -18,6 +18,13 @@ app.get('/', function(req, res) {
     })
 })
 
+app.get('/about', function(req, res) {
+    pug.renderFile(path.join(publicRoot, 'html/about.pug'), (err, html) => {
+        if(err) { console.log(err) }
+        res.send(html)
+    })
+})
+
 app.get('/share-repo', function(req, res) {
     pug.renderFile(path.join(publicRoot, 'html/share-repo.pug'), (err, html) => {
         if(err) {console.log(err)}
