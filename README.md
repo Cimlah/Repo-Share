@@ -35,7 +35,8 @@ This repository is licensed under MIT License
     * `star`
     * `gitfork`
     * `script`
-  * `/` - Display HTML of the main page
+  * `/` - Display the main page
+  * `/about` - Display the *ABOUT* subpage
 
 ## Directory structure
 
