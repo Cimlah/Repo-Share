@@ -1,2 +1,0 @@
-.gitattributes !filter !diff
-data/octokit-auth.json filter=git-crypt diff=git-crypt

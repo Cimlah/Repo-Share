@@ -1,6 +1,5 @@
 const { Octokit, App } = require("octokit");
-const octokitAuth = require('../data/octokit-auth.json')
-const octokit = new Octokit(octokitAuth);
+const octokit = new Octokit({  });
 
 module.exports = async function (userParam, repositoryParam) {
     try {
