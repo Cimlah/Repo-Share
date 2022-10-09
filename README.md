@@ -1,5 +1,3 @@
-**Project still in development**
-
 # Repo Share
 
 A NodeJS app generating an iframe based on information about your repository, so you can show off your portfolio in an elegant way.
